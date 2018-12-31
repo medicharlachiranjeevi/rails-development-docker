@@ -1,0 +1,4 @@
+echo $RUBY_VER
+bash -lc "rvm install ruby-$RUBY_VER"
+bash -lc "rvm --default use ruby-$RUBY_VER"
+
