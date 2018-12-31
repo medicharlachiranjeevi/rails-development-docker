@@ -33,6 +33,7 @@
         bundle install
         rake bd:create
         rake db:migrate
+        service nginx relaod
 
 # For logs
 
