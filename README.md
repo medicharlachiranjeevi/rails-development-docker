@@ -33,8 +33,10 @@
         bundle install
         rake bd:create
         rake db:migrate
-        service nginx relaod
+        service nginx reload
 
 # For logs
 
   	docker-compose logs web
+# For backup database and restore
+     cat dumpfile | docker-compose exec postgres psql -Upostgres

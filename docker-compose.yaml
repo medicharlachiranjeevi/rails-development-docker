@@ -10,7 +10,7 @@ services:
      - "80:80"
    volumes:
      - /var/www/html:/var/www/html
-     - /etc/ngix/sites-enabled:/etc/ngix/sites-enabled
+     - /etc/nginx/sites-enabled:/etc/nginx/sites-enabled
    environment:
       APP_DB_DATABASE: ${POSTGRES_DB}
       APP_DB_USERNAME: ${POSTGRES_USER}
